@@ -1,0 +1,56 @@
+<mxfile host="app.diagrams.net" modified="2023-11-27T14:45:11.621Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="g5zfkpDfyFUM3ZZL8GQX" version="22.1.4" type="device">
+  <diagram name="Page-1" id="L_-lbFeIbZi7sNbTs06q">
+    <mxGraphModel dx="1290" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vsAOpYmzWSux3hDCXhY7-17" value="Patient" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="40" y="220" width="160" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="vsAOpYmzWSux3hDCXhY7-32" value="PatientID (PK)&lt;br&gt;Firstname&lt;br&gt;Lastname&lt;br&gt;Dateofbirth&lt;br&gt;Address" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="vsAOpYmzWSux3hDCXhY7-17" vertex="1">
+          <mxGeometry y="26" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="vsAOpYmzWSux3hDCXhY7-34" value="Doctor" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="290" y="220" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="vsAOpYmzWSux3hDCXhY7-35" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;DoctorID (PK)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Firstname&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Lastname&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Specialization&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Phonenumber&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;align=center;" parent="vsAOpYmzWSux3hDCXhY7-34" vertex="1">
+          <mxGeometry y="26" width="160" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="vsAOpYmzWSux3hDCXhY7-38" value="Appointment" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="540" y="224" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="vsAOpYmzWSux3hDCXhY7-39" value="AppointmentID (PK)&lt;br&gt;PatientID (FK)&lt;br&gt;DoctorID (FK)&lt;br&gt;Appointment Date&lt;br&gt;Reason" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;align=center;" parent="vsAOpYmzWSux3hDCXhY7-38" vertex="1">
+          <mxGeometry y="26" width="160" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="vsAOpYmzWSux3hDCXhY7-42" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;endFill=1;rounded=0;entryX=-0.025;entryY=0.306;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="vsAOpYmzWSux3hDCXhY7-35" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="200" y="315.51" as="sourcePoint" />
+            <mxPoint x="265" y="190.48000000000002" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="235" y="250.51" />
+              <mxPoint x="205" y="240.51" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vsAOpYmzWSux3hDCXhY7-43" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;endFill=1;rounded=0;exitX=1.02;exitY=0.613;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="450.00000000000006" y="319.81199999999995" as="sourcePoint" />
+            <mxPoint x="536.8" y="262.19" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vsAOpYmzWSux3hDCXhY7-44" value="M" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="505" y="258" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vsAOpYmzWSux3hDCXhY7-46" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="455" y="288" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vsAOpYmzWSux3hDCXhY7-47" value="M" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="260" y="240" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vsAOpYmzWSux3hDCXhY7-49" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="195" y="288" width="30" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
